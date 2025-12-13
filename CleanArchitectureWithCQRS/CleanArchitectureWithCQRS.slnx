@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CleanArchitectureWithCQRS.Api/CleanArchitectureWithCQRS.Api.csproj" />
+  <Project Path="CleanArchitectureWithCQRS.Application/CleanArchitectureWithCQRS.Application.csproj" />
+  <Project Path="CleanArchitectureWithCQRS.Domain/CleanArchitectureWithCQRS.Domain.csproj" />
+  <Project Path="CleanArchitectureWithCQRS.Infrastructure/CleanArchitectureWithCQRS.Infrastructure.csproj" />
+</Solution>
