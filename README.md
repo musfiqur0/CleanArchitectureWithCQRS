@@ -7,11 +7,11 @@ This repository demonstrates a simple CRUD API for blog posts using Clean Archit
 
 The API exposes a set of routes for working with `Blog` resources. Each route uses a conventional HTTP verb:
 
-- **GetAll (GET)**: `/api/Blog/` – returns a list of all blog posts.
-- **GetById (GET)**: `/api/Blog/{id}` – returns a single post by its identifier.
-- **Create (POST)**: `/api/Blog/` – creates a new blog post.
-- **Update (PUT)**: `/api/Blog/{id}` – updates an existing post.
-- **Delete (DELETE)**: `/api/Blog/{id}` – removes a post by its identifier.
+- **GetAll (GET)**: `https://localhost:7064/api/Blog/` – returns a list of all blog posts.
+- **GetById (GET)**: `https://localhost:7064/api/Blog/{id}` – returns a single post by its identifier.
+- **Create (POST)**: `https://localhost:7064/api/Blog/` – creates a new blog post.
+- **Update (PUT)**: `https://localhost:7064/api/Blog/{id}` – updates an existing post.
+- **Delete (DELETE)**: `https://localhost:7064/api/Blog/{id}` – removes a post by its identifier.
 
 ## Sample Payloads
 
