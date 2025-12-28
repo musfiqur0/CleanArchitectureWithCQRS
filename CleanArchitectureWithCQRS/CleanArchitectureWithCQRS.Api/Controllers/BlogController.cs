@@ -4,6 +4,7 @@ using CleanArchitectureWithCQRS.Application.Blogs.Commands.UpdateBlog;
 using CleanArchitectureWithCQRS.Application.Blogs.Queries.GetBlogById;
 using CleanArchitectureWithCQRS.Application.Blogs.Queries.GetBlogs;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitectureWithCQRS.Api.Controllers
@@ -51,7 +52,12 @@ namespace CleanArchitectureWithCQRS.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await Mediator.Send(new DeleteBlogCommand { Id = id });
+            var result = await Mediator.Send(new DeleteBlogCommand { Id = id });
+            if (result == 0)
+            {
+                return BadRequest();
+            }
+
             return NoContent();
         }
     }
